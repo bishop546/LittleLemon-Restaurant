@@ -18,8 +18,8 @@ router.register(r'order-items', OrderItemView)
 urlpatterns = [
     path('api/', include(router.urls)),
     path('api/token/', obtain_auth_token, name='api_token_auth'),
-    path('token/register/', RegisterView.as_view(), name='register'),
-    path('token/login/', LoginView.as_view(), name='login'),
+    path('auth/token/register/', RegisterView.as_view(), name='register'),
+    path('auth/token/login/', LoginView.as_view(), name='login'),
     path('group/membership/', GroupMembershipView.as_view(), name='group-membership'),
     path('manager/membership/', ManagerMembershipView.as_view(), name='manager-membership'),
 ]
