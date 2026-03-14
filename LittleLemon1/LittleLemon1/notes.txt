@@ -1,0 +1,4 @@
+admin = 54321
+Lemon_manager1 = 12345
+delivery_1 = bluetiger
+Customer_1 = whitebottle
